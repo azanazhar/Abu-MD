@@ -10,7 +10,7 @@ const DATABASE_URL = process.env.DATABASE_URL === undefined ? "./lib/database.db
 
 module.exports = {
 
-  ANTILINK: toBool(process.env.ANTI_LINK) || false,
+  ANTILINK: toBool(process.env.ANTI_LINK) || true,
 
   LOGS: toBool(process.env.LOGS) || true,
 
@@ -24,9 +24,9 @@ module.exports = {
 
   LANGUAGE: process.env.LANGUAGE || "EN",
 
-  WARN_LIMIT: process.env.WARN_LIMIT || "3",
+  WARN_LIMIT: process.env.WARN_LIMIT || "1",
 
-  HANDLERS:process.env.HANDLER === "false" || process.env.HANDLERS || '^,',
+  HANDLERS:process.env.HANDLER === "true" || process.env.HANDLERS || '^,',
 
   IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f", "deb80cd12ababea1c9b9a8ad6ce3fab2", "78c84c62b32a88e86daf87dd509a657a"],
 
@@ -40,7 +40,7 @@ module.exports = {
 
   FORWARD: process.env.FORWARD || '𝐀𝐁𝐔 𝐌𝐃 𝐁𝐎𝐓;~Jasil;Copyright by Abu;https://i.ibb.co/nc4MKWb/ae8d07d7943e.jpg;audio;audio/mp4;https://github.com/Afx-Abu/Abu-MD',
   
-  BOT_INFO: process.env.BOT_INFO || '𝐀𝐁𝐔 𝐌𝐃 𝐁𝐎𝐓;~Jasil;Copyright by Abu;917025994178;™𝐀𝐁𝐔 𝐌𝐃;https://i.ibb.co/nc4MKWb/ae8d07d7943e.jpg',
+  BOT_INFO: process.env.BOT_INFO || '𝐀𝐁𝐔 𝐌𝐃 𝐁𝐎𝐓;~Jasil;Copyright by Abu;923130013796;™𝐀𝐁𝐔 𝐌𝐃;https://i.ibb.co/nc4MKWb/ae8d07d7943e.jpg',
 
   WELCOME_MSG: process.env.WELCOME_MSG || "Hi @user Welcome to @gname",
 
@@ -52,7 +52,7 @@ module.exports = {
 
   ACR_S: "ytu3AdkCu7fkRVuENhXxs9jsOW4YJtDXimAWMpJp",
 
-  SUDO: process.env.SUDO || "917025994178",
+  SUDO: process.env.SUDO || "923130013796",
 
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || " ",
 
